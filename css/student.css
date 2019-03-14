@@ -31,144 +31,102 @@ nav div {
 	width: 30px;
 }
 
-#mainimg {
+#student-feature {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 2fr;
+	grid-template-rows: repeat(3, 1fr); 
+	grid-gap: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+ #focus {
+	background: url('https://i.pinimg.com/originals/1f/ae/50/1fae509c2625b85c3011bba0b462b9c8.jpg');
 	background-size: cover;
-	height: 80vh;
-	width: 60%;
-  background-color: grey;
-  border: 10px solid white;
-  position: relative;
-  left: 30px;
+	background-position: center;
+	grid-column-start: 1 ;
+	grid-column-end: 4;
+	grid-row-start: 1; 
+	grid-row-end: 3;
 }
 
-div#mainimg img[alt=car] {
-	height: 80vh;
-	width: 100%;
+
+
+#position-one {
+	background: url('https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 1 ;
+	grid-column-end: 2;
+	grid-row-start: 3; 
+	grid-row-end: 4;
 }
 
-div#mainimg img[alt="left"] {
-  position: absolute;
-  left: -2%;
-  top: 40%;
-  height: 70px;
+#position-two {
+	background: url('https://forfunnest.com/wp-content/uploads/2016/11/meme-friday-monday.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 2 ;
+	grid-column-end: 3;
+	grid-row-start: 3; 
+	grid-row-end: 4;
 }
 
-div#mainimg p {
+#position-three {
+	background: url('https://s.hdnux.com/photos/46/61/76/10166192/3/920x920.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 3 ;
+	grid-column-end: 4;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+}
+
+#bio {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  color:white;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 1; 
+	grid-row-end: 2;
 }
 
-div#maining div p {
+#bio section {
   display: flex;
-  justify-content: flex-end
-  margin: 2%;
-}
-
-div#mainimg div {
-	height: 10vh;
-	width: 100%;
-  background-color: #696969;
-  position: absolute;
-  top: 87%;
-}
-
-div#mainimg img[alt="right"]  {
-  position: absolute;
-  right: -2%;
-  top: 40%;
-  height: 70px;
-}
-
-#maininfo {
-  position: absolute;
-  left: 65%;
-  bottom: 36%;
- 	display: flex;
   flex-direction: column;
   align-items: flex-end;
-  line-height: .1em;
-  background-color: white;
-  height: 45%;
-  width: 33.5%; 
+  font-size: 1.5em;  
 }
 
-#maininfo div {
-  height: 90%;
-  position: absolute;
-  left: 57%;
-  bottom: 12%;
+#bio div {
+  width: 200px;
+  height: 250px;
+  background-color: #696969;
 }
 
-h2, .myinfo {
-  position: relative;
-  right: 48%;
+#project-detail {
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 2; 
+	grid-row-end: 4;
+  text-transform: uppercase;
 }
 
-div#description div {
-  background-color: white;
-  width: 33.7%;
-  height: 500px;
+#student {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
 }
 
-div#description div p {
- color: black; 
- margin: 2%;
-  font-size: 1.5em;
-}
-
-#description {
-  display: flex; 
-  justify-content: flex-end;
-  position: relative;
-  bottom: 150px;
-  right: 10px;
-}
-
-div#description h1 {
-  margin: 2%
-}
-
-div div#cards p {
-  width: 450px;
-  height: 280px;
-  background-color: grey;
-  margin: 10px;
-  border: 10px solid white;
-  background: url(https://steamuserimages-a.akamaihd.net/ugc/914665466476618727/472BDD621A68F7EC9591E59E6C3DD6531DCCF864/);
-  background-size: cover;
-}
-
-#cards {
-  display: flex; 
-  position: absolute;
-  bottom: -350px;
-  left: 36px;
-}
-
-#myportfolio {
-  position: absolute; 
-  bottom: -450px;
-  left: 30px;
-}
-
-#gallery { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-div#gallery .img {
-  background: url(https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/04/cars_3_characters-17.jpg);
- background-size: cover;   
-}
-
-.img {
-  background: url(background: url("https://vignette2.wikia.nocookie.net/worldofcarsdrivein/images/d/d0/Fillmore.png/revision/latest?cb=20111006075558");
-  height: 400px;
-  width: 500px;
-  margin: 10px;
+img {
+	width: 100%;
 }
 
 footer {
@@ -257,7 +215,5 @@ background-size: cover;
   display: flex;
   margin: 10px;
 }
- 
-
 
 
