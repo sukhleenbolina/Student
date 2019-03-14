@@ -4,9 +4,8 @@
 }
 
 body {
-    font-family: "Museo", sans-serif;
-
   background: url(https://github.com/sukhleenbolina/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true);
+  font-family: "Museo", sans-serif;
 }
 
 nav {
@@ -15,7 +14,7 @@ nav {
 	align-items: center;
 }
 
-#left {
+nav div {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -29,106 +28,111 @@ nav {
 }
 
 .icon {
-	width: 50px;
+	width: 30px;
 }
 
-#mainimg {
+#student-feature {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 2fr;
+	grid-template-rows: repeat(3, 1fr); 
+	grid-gap: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+ #focus {
+	background: url('https://i.pinimg.com/originals/1f/ae/50/1fae509c2625b85c3011bba0b462b9c8.jpg');
 	background-size: cover;
-	height: 80vh;
-	width: 95%;
-  background-color: grey;
-  border: 10px solid white;
-  position: relative;
-  left: 30px;
-  bottom: -12px;
+	background-position: center;
+	grid-column-start: 1 ;
+	grid-column-end: 4;
+	grid-row-start: 1; 
+	grid-row-end: 3;
 }
 
-div#mainimg img[alt=shrekone] {
-	height: 70vh;
-	width: 100%;
+
+
+#position-one {
+	background: url('https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 1 ;
+	grid-column-end: 2;
+	grid-row-start: 3; 
+	grid-row-end: 4;
 }
 
-div#mainimg img[alt=left-arrow] {
-  position: absolute;
-  left: -1%;
-  top: 40%;
-  height: 70px;
+#position-two {
+	background: url('https://forfunnest.com/wp-content/uploads/2016/11/meme-friday-monday.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 2 ;
+	grid-column-end: 3;
+	grid-row-start: 3; 
+	grid-row-end: 4;
 }
 
-div#mainimg img[alt=right-arrow] {
-  position: absolute;
-  right: -1%;
-  top: 40%;
-  height: 70px;
+#position-three {
+	background: url('https://s.hdnux.com/photos/46/61/76/10166192/3/920x920.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 3 ;
+	grid-column-end: 4;
+	grid-row-start: 3; 
+	grid-row-end: 4;
 }
 
-#mainimg div p {
-  display: flex; 
-  justify-content: flex-end;
+#bio {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 1; 
+	grid-row-end: 2;
 }
 
-#mainimg div {
-  background-size: cover;
-	height: 10vh;
-	width: 100%;
+#bio section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1.5em;  
+}
+
+#bio div {
+  width: 200px;
+  height: 250px;
   background-color: #696969;
-  position: absolute;
-  top: 87%;
-  
 }
 
-#nessst {
-  color: black;
+#project-detail {
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 2; 
+	grid-row-end: 4;
+  text-transform: uppercase;
+}
+
+#student {
+  text-transform: uppercase;
   font-size: 2em;
-  display: flex;
-  justify-content: center;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
 }
 
-#gallery {
-  display: flex;
-  justify-content: center;
-}
-
-section {
-  margin: 20px 10px;
-	height: 40vh;
-	width: 60vh;
-  background-color: #696969;
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(https://www.writeups.org/wp-content/uploads/Shrek-movie.jpg);
-background-size: cover;
-}
-
-#viewmore p {
-  position: realtive;
-  bottom: 15px;
-}
-
-#viewmore{
-  width: 15%;
-  height: 8%;
-  color: black; 
-  left: 42%;
-  position: relative; 
-  background: url(https://github.com/sukhleenbolina/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true);
- background-color: #666;
-  background-blend-mode: overlay;
-  display: flex;
-  justify-content: center;
-  
+img {
+	width: 100%;
 }
 
 footer {
-  postion: relative;
-  bottom: -30%;
+  position: relative;
+  bottom: -30px;
   background-size: cover;
-	height: 100vh;
 	width: 100%;
   background: url(https://github.com/sukhleenbolina/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true);
  background-color: #666;
@@ -179,18 +183,23 @@ a {
 
 h3 {
   text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  left: 1px;
 }
 
 .box {
   width: 120px;
   height: 90px;
-   background: url(https://www.dreamworksanimation.com/wp-content/uploads/2014/10/shrek-watch-xmas-on.jpg);
+   background: url(http://3.bp.blogspot.com/-5Ci9DSGWfg4/UGi7P7ttP2I/AAAAAAAABDo/7Y4pD5JH0DA/s1600/Finn_McMissile_3_5245.png);
 background-size: cover;
+  margin-left: 10px;
 }	
 
 .footer-columns {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   background: url(https://github.com/sukhleenbolina/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true);
  background-color: #666;
@@ -199,21 +208,12 @@ background-size: cover;
 
 .column {
   width: 100%;
+  margin: 20px;
 }
 
 .four {
   display: flex;
+  margin: 10px;
 }
- 
-
-
-
-
-
-
-
-
-
-
 
 
